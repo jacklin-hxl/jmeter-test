@@ -1,2 +1,2 @@
-# jmeter_report_xsl
-该仓库应用于通过xsl将jmeter生成的jtl文件输出html文件
+# jmeter
+该仓库应用于jmeter的学习和引用
