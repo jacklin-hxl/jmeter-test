@@ -261,7 +261,8 @@
 		</body>
     </html>
 
-    <script language="JavaScript"><![CDATA[
+    <script language="JavaScript">
+        <![CDATA[
         var data = [{ "type": "success", "color": "#5ab1ee" }, { "type": "failure", "color": "#d7797f" }];
         var canvas = document.querySelector("#canvas");
         var ctx = canvas.getContext("2d");                                  //获取canvas上下文
@@ -403,8 +404,10 @@
             startAngle = 0.5 * Math.PI
             ctx.restore();
         };
-    ]]></script>
-    <script language="JavaScript"><![CDATA[
+        ]]>
+    </script>
+    <script language="JavaScript">
+        <![CDATA[
         function expand(details_id) {
             document.getElementById(details_id).className = "page_details_expanded";
         }
@@ -427,7 +430,8 @@
                 document.getElementById(details_id + "_image").setAttribute('data-type', 'expand');
             }
         }
-    ]]></script>
+        ]]>
+    </script>
 
 </xsl:template>
 
@@ -602,9 +606,16 @@
                         <td>
                             <xsl:value-of select="$successCount" />
                         </td>
-                        <td>
-                            <xsl:value-of select="$failureCount" />
-                        </td>
+                        <xsl:if test="$failureCount > 0">
+                            <td style="color:red">
+                                <xsl:value-of select="$failureCount" />
+                            </td>
+                        </xsl:if>
+                        <xsl:if test="0 >= $failureCount">
+                            <td>
+                                <xsl:value-of select="$failureCount" />
+                            </td>
+                      </xsl:if>
                         <td>
                             <xsl:call-template name="display-percent">
                                 <xsl:with-param name="value" select="$successPercent" />
