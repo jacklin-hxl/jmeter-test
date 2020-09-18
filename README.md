@@ -19,3 +19,8 @@
 ```xml
 <?xml-stylesheet type="text/xsl" href="jmeter-results-report_hxl.xsl"?>
 ```
+
+输出的例图如下：  
+<img src="docs/images/screen-report_hxl_1.jpg" width="400px" style="margin:auto;display:block">
+
+<img src="docs/images/screen-report_hxl_2.jpg" width="400px" style="margin:auto;display:block">
