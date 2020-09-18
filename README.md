@@ -21,6 +21,6 @@
 ```
 
 输出的例图如下：  
-<img src="docs/images/screen-report_hxl_1.jpg" width="400px" style="margin:auto;display:block">
+<img src="docs/images/screen-report_hxl_1.jpg" width="800px" style="margin:auto;display:block">
 
-<img src="docs/images/screen-report_hxl_2.jpg" width="400px" style="margin:auto;display:block">
+<img src="docs/images/screen-report_hxl_2.jpg" width="800px" style="margin:auto;display:block">
